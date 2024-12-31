@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  </head>
+  <link rel="stylesheet" href="index.css">
+  <body>
+    <div class="header">
+      <h5>Empoloye</h5>
+    </div>
+    <div class="upper-btn-box">
+      <div class="left-box">
+        <button id="add-btn">
+          <i class="ri-sticky-note-add-line"></i>&nbsp;Add Empoloye
+        </button>
+        <button id="del-all-data" style="background-color: #33b5e6">
+          <i class="ri-eraser-line"></i>&nbsp;Erase All Data
+        </button>
+        <input style="cursor: pointer; width: 30px; height: 30px;" type="checkbox" name="" id="del-all-box">
+      </div>
+      <div class="right-box">
+        <i class="ri-search-line"></i>
+        <input type="text" id="empId" placeholder="Enter Empoloye id" />
+        <button>Search</button>
+      </div>
+    </div>
+    <div class="table-box">
+      <table>
+        <tr>
+          <th>Sr No.</th>
+          <th>Profile</th>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>E-mail</th>
+          <th>Office Code</th>
+          <th>Job Title</th>
+          <th>Action</th>
+        </tr>
+       <tbody id="table-data">
+
+       </tbody>
+      </table>
+    </div>
+    <div class="model">
+      <i class="fa-solid fa-xmark close-icon"></i>
+      
+      <div class="left-model">
+        <div class="img-box">
+          <img src="blank.png" alt="photo" id="profile-pic"  />
+          <i class="ri-add-line"></i>
+          <input type="file" id="upload-field" />
+        </div>
+      </div>
+      <div class="right-model">
+        <form id="resisterForm">
+          <div class="input-box">
+            <label for="id">Id</label>
+            <input required  type="text" id="id">
+        </div>
+        <div class="input-box">
+            <label for="name">Name</label>
+            <input required type="name" id="name">
+        </div>
+        <div class="input-box">
+            <label for="lastname">Last-Name</label>
+            <input required type="name" id="lastname">
+        </div>
+        <div class="input-box">
+            <label for="job_title">Job-Title</label>
+            <input required type="name" id="job_title">
+        </div>
+        <div class="input-box">
+            <label for="o_code">Office-Code</label>
+            <input required type="number" id="o_code">
+        </div>
+        <div class="input-box">
+            <label for="e_mail">E-mail</label>
+            <input required type="email" id="e_mail">
+        </div>
+        <div class="input-box">
+            <button id="resisterbtn">Resister</button>
+            <button  id="update-btn" disabled="disabled"><span>Update</span></button> 
+        </div>
+        </form>
+      </div>
+    </div>
+   <script src="script.js"></script>
+  </body>
+</html>
